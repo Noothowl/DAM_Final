@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ForjaScreen extends StatelessWidget {
-  const ForjaScreen({Key? key}) : super(key: key);
+class ForjaBasica extends StatelessWidget {
+  const ForjaBasica({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class ForjaScreen extends StatelessWidget {
         title: Text('Herrería asistida'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Forjando INC.b"),
+        child: Text("Nivel básico"),
         preferredSize: Size.zero),
       ),
       body: Column(

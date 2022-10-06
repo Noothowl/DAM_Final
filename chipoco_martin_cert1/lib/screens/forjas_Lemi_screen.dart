@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/dungeon_camaras_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/forja_encantada_Lemi_screen.dart';
 import 'package:proyecto_dam1_pre_alfa/screens/forja_basica_Lemi_screen.dart';
 import 'package:proyecto_dam1_pre_alfa/screens/forja_avanzada_Lemi_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/forja_oscura_Lemi_screen.dart';
 
 
 class DungeonsScreen extends StatelessWidget {
@@ -33,7 +34,7 @@ class DungeonsScreen extends StatelessWidget {
               title: Text("Herrería básica"),
               subtitle: Text("Perfecto para nivel aprendiz"),
               onTap: (){
-                _navegarTo(context, 'Forja');
+                _navegarTo(context, 'Basic');
               },
             ),
             Divider(
@@ -46,7 +47,21 @@ class DungeonsScreen extends StatelessWidget {
               
               onTap: (){
                 print("Printing project settings");
-                _navegarTo(context, 'Foso');
+                _navegarTo(context, 'Advanced');
+              },
+              
+            ),
+            Divider(
+              thickness: 1.5,
+            ),
+            ListTile(
+              leading: Icon(Icons.align_horizontal_left, color: Colors.green),
+              title: Text("Herrería Encantada"),
+              subtitle: Text("Comienza a forjar la magia"),
+              
+              onTap: (){
+                print("Printing project users");
+                _navegarTo(context, 'Magic');
               },
               
             ),
@@ -55,12 +70,11 @@ class DungeonsScreen extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.align_horizontal_center_sharp, color: Colors.deepPurple),
-              title: Text("Herrería Encantada"),
-              subtitle: Text("Comienza a forjar la magia"),
-              
+              title: Text("Herrería Oscura"),
+              subtitle: Text("Magia negra (legal)"),
               onTap: (){
                 print("Printing project users");
-                _navegarTo(context, 'camaras');
+                _navegarTo(context, 'Darkness');
               },
               
             ),
@@ -81,14 +95,17 @@ class DungeonsScreen extends StatelessWidget {
   void _navegarTo(BuildContext context, String screen){
     final route = MaterialPageRoute(builder: (context){
       switch (screen){
-        case 'Forja':
-          return ForjaScreen();
+        case 'Basic':
+          return ForjaBasica();
 
-        case 'Foso': 
-          return FosoScreen();
+        case 'Advanced': 
+          return ForjaAvanzada();
+
+        case 'Magic':
+          return ForjaEncant();
 
         default:
-          return CamarasScreen(); 
+          return ForjaOscura(); 
       }
     });
     Navigator.push(context, route);

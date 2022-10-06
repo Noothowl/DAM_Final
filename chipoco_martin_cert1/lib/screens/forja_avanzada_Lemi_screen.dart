@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FosoScreen extends StatelessWidget {
-  const FosoScreen({Key? key}) : super(key: key);
+class ForjaAvanzada extends StatelessWidget {
+  const ForjaAvanzada({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class FosoScreen extends StatelessWidget {
         title: Text('Herrería asistida'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Forjando INC. a"),
+        child: Text("Caminando a Maestro"),
         preferredSize: Size.zero),
       ),
       body: Column(

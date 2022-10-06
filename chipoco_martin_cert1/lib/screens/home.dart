@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:proyecto_dam1_pre_alfa/screens/contactos.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/dungeons_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/forjas_Lemi_screen.dart';
 
 class InicioScreen extends StatefulWidget {
   InicioScreen({Key? key}) : super(key: key);

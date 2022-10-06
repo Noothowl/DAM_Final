@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class CamarasScreen extends StatelessWidget {
-  const CamarasScreen({Key? key}) : super(key: key);
+class ForjaOscura extends StatelessWidget {
+  const ForjaOscura({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //leading: Image(image: image),
-            title: Text('Herrería asistida'),
+            title: Text('Herrería Oscura'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Forjando INC.c"),
+        child: Text("Esto no es legal"),
         preferredSize: Size.zero),
       ),
       body: Column(
         children: [
           Center(
-            child: Text('Camaras de reflexion'),
+            child: Text('Forja Magia Oscura'),
           ),
           OutlinedButton(
             child: Text('Volver'),
