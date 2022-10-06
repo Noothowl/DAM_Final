@@ -7,10 +7,10 @@ class FosoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Certamen 1 DAM'),
+        title: Text('Herrería asistida'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Martin Chipoco"),
+        child: Text("Forjando INC. a"),
         preferredSize: Size.zero),
       ),
       body: Column(

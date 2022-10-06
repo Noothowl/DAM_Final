@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:proyecto_dam1_pre_alfa/screens/dungeon_foso_screen.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/dungeons_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/home.dart';
+
 
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Camino del Herrero',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -25,9 +26,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
-      home: DungeonsScreen(),
+      home: InicioScreen(),
       //home: FosoScreen(),
     );
   }

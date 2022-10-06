@@ -8,10 +8,10 @@ class CamarasScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         //leading: Image(image: image),
-            title: Text('Certamen 1 DAM'),
+            title: Text('Herrería asistida'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Martin Chipoco"),
+        child: Text("Forjando INC.c"),
         preferredSize: Size.zero),
       ),
       body: Column(

@@ -9,64 +9,66 @@ class DungeonsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final estiloTexto = new TextStyle(
+      fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 96, 72, 232));
     return Scaffold(
       appBar: AppBar(
-        title: Text('Certamen 1 DAM'),
+        title: Text('C1 DAM020-2022-2', style: estiloTexto,),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Martin Chipoco"),
+        child: Text("Martin Chipoco", style: estiloTexto),
         preferredSize: Size.zero),
       ),
-      body: ListView(
-        children: [
-            /*Divider(
-            thickness: 1.5,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: [
+              /*Divider(
+              thickness: 1.5,
+              ),
+              */
+            ListTile(
+              leading: Icon(Icons.workspaces_outlined, color: Colors.lightBlue
+              ),
+              title: Text("Herrería básica"),
+              subtitle: Text("Perfecto para nivel aprendiz"),
+              onTap: (){
+                _navegarTo(context, 'Forja');
+              },
             ),
-            */
-          ListTile(
-            leading: Icon(Icons.file_download, color: Colors.deepPurple
+            Divider(
+              thickness: 1.5,
             ),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("Forja de almas"),
-            subtitle: Text("Progresion LvL 80"),
-            onTap: (){
-              _navegarTo(context, 'Forja');
-            },
-          ),
-          Divider(
-            thickness: 1.5,
-          ),
-          ListTile(
-            leading: Icon(Icons.settings, color: Colors.deepPurple),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("Foso de Saron"),
-            subtitle: Text("Progresion LvL 80"),
-            
-            onTap: (){
-              print("Printing project settings");
-              _navegarTo(context, 'Foso');
-            },
-            
-          ),
-          Divider(
-            thickness: 1.5,
-          ),
-          ListTile(
-            leading: Icon(Icons.people, color: Colors.deepPurple),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("Camaras de reflexion"),
-            subtitle: Text("Progresion LvL 80"),
-            
-            onTap: (){
-              print("Printing project users");
-              _navegarTo(context, 'camaras');
-            },
-            
-          ),
-          Divider(
-            thickness: 1.5,
-          ),
-        ],
+            ListTile(
+              leading: Icon(Icons.workspaces_rounded, color: Colors.blueAccent),
+              title: Text("Herrería Avanzada"),
+              subtitle: Text("Camina hacia la Maestría"),
+              
+              onTap: (){
+                print("Printing project settings");
+                _navegarTo(context, 'Foso');
+              },
+              
+            ),
+            Divider(
+              thickness: 1.5,
+            ),
+            ListTile(
+              leading: Icon(Icons.align_horizontal_center_sharp, color: Colors.deepPurple),
+              title: Text("Herrería Encantada"),
+              subtitle: Text("Comienza a forjar la magia"),
+              
+              onTap: (){
+                print("Printing project users");
+                _navegarTo(context, 'camaras');
+              },
+              
+            ),
+            Divider(
+              thickness: 1.5,
+            ),
+          ],
+        ),
       ),
 
 
