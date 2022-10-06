@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_dam1_pre_alfa/screens/dungeon_camaras_screen.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/dungeon_forja_screen.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/dungeon_foso_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/forja_basica_Lemi_screen.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/forja_avanzada_Lemi_screen.dart';
 
 
 class DungeonsScreen extends StatelessWidget {
