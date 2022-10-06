@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ForjaAvanzada extends StatelessWidget {
-  const ForjaAvanzada({Key? key}) : super(key: key);
+class BasicIntroScreen extends StatelessWidget {
+  const BasicIntroScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Forja avanzada'),
+        title: Text('Introducción a la Herrería'),
             centerTitle: true,
             bottom: PreferredSize(
-        child: Text("Caminando a la maestría"),
+        child: Text("Introducción"),
         preferredSize: Size.zero),
       ),
       body: Padding(
@@ -22,29 +22,29 @@ class ForjaAvanzada extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               width: double.infinity,
               //padding: EdgeInsets.only(right: 100),
-              child: Text("Mejoría", style: TextStyle(fontSize: 25, color: Colors.lightBlue)),
+              child: Text("Introducción", style: TextStyle(fontSize: 32, color: Colors.lightBlue)),
             ),
             Container(
               width: double.infinity,
               //padding: EdgeInsets.only(right: 100),
-              child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae metus vel ligula vestibulum scelerisque. Curabitur vitae sapien justo.", style: TextStyle(fontSize: 25, color: Colors.blueGrey)),
+              child: Text("Para comenzar a forjar requieres un material sólido para dar resistencia y un material de unión para dar volúmen", style: TextStyle(fontSize: 25, color: Colors.blueGrey)),
             ),
             Container(
-              child: Image(image: AssetImage('Assets/forja_avanzada.jpg')),
+              child: Image(image: AssetImage('Assets/forja_intro.jpg')),
             ),
             Container(
-              child: Text('Fecha de inicio: 1/09/2022'),
+              child: Text('Fecha de inicio: 10/08/2022'),
             ),
             Container(
               child: Text('Horario: todo el día'),
             ),
             Container(
               width: double.infinity,
-              child: Text("Precio del kit:", style: TextStyle(fontSize: 20, color: Colors.blueGrey)),
+              child: Text("Precio del kit:", style: TextStyle(fontSize: 30, color: Colors.blueGrey)),
             ),
             Container(
               width: double.infinity,
-              child: Text("90.000 CLP", style: TextStyle(fontSize: 32, color: Colors.blue)),
+              child: Text("35.000 CLP", style: TextStyle(fontSize: 32, color: Colors.blue)),
             ),
           ],
         ),

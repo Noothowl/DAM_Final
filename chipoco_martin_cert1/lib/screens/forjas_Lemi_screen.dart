@@ -102,7 +102,7 @@ class DungeonsScreen extends StatelessWidget {
           return ForjaAvanzada();
 
         case 'Magic':
-          return ForjaEncant();
+          return ForjaEncantada();
 
         default:
           return ForjaOscura(); 

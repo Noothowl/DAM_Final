@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:proyecto_dam1_pre_alfa/screens/dungeon_foso_screen.dart';
-import 'package:proyecto_dam1_pre_alfa/screens/home.dart';
+import 'package:proyecto_dam1_pre_alfa/screens/buttons_Lemi_screen.dart';
 
 
 

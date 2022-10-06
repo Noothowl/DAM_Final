@@ -27,7 +27,7 @@ class _InicioScreen extends State<InicioScreen> {
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           items: [
-            BottomNavigationBarItem(icon: Icon(MdiIcons.googleEarth), label: 'Capacitaciones',),
+            BottomNavigationBarItem(icon: Icon(MdiIcons.googleEarth), label: 'Aprendizaje',),
             BottomNavigationBarItem(icon: Icon(Icons.contact_mail), label: 'Invocaciones'),
           ],
           currentIndex: _currentIndex,

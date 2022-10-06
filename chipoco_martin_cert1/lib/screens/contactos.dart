@@ -20,9 +20,13 @@ class ContactosScreen extends StatelessWidget {
         child: Text("Martin Chipoco", style: estiloTexto),
             preferredSize: Size.zero),
       ),
-      body: Column(
+      body: 
+      Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+        Container(
+          child: Image(image: AssetImage('Assets/invocations.jfif'),)
+        ),
         TextField(
           keyboardType: TextInputType.text,
           decoration: InputDecoration(
@@ -41,6 +45,9 @@ class ContactosScreen extends StatelessWidget {
               labelText: 'Ingrese fecha',
               suffixIcon: Icon(MdiIcons.calendarToday)),
           ),
+          Container(
+            child: ElevatedButton(onPressed: (){}, child: Text('Invocar')),
+          )
         ],
 
       ),
