@@ -7,7 +7,11 @@ class ForjaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Forja de almas'),
+        title: Text('Certamen 1 DAM'),
+            centerTitle: true,
+            bottom: PreferredSize(
+        child: Text("Martin Chipoco"),
+        preferredSize: Size.zero),
       ),
       body: Column(
         children: [
