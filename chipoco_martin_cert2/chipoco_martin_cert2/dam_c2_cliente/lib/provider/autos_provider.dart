@@ -53,7 +53,7 @@ class AutosProvider {
   }
 
   Future<http.Response> borrarAuto(String vin) async {
-    var url = Uri.parse('$apiURL/$vin');
+    var url = Uri.parse('$apiURL/autos/$vin');
     return await http.delete(url);
     print('ok');
   }
